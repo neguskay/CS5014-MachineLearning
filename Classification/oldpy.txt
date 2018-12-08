@@ -1,0 +1,91 @@
+# print("Trans Train x")
+# training_data_x.transpose()
+# print(len(training_data_x.transpose()))
+# print(training_data_x.shape)
+#
+# log_reg = LogisticRegression()
+# print("Normal Y data")
+# print(training_data_y.values)
+# print("Ravel Y Data")
+# print(training_data_y.values.ravel())
+# log_reg.fit(training_data_x, training_data_y.values.ravel())
+#
+# print("Predicted")
+# deci_f = log_reg.decision_function(test_data_x)
+# print("Decision Frunction with len: ", len(deci_f))
+# print(deci_f)
+# print(type(deci_f))
+# for i in range(len(deci_f)):
+#     if deci_f[i]> 0:
+#         deci_f[i] = 1
+#     else:
+#         deci_f[i] = 0
+# print("classified decisions")
+# print(deci_f)
+# print("Predict Y for Test Data")
+# pred_data = log_reg.predict(test_data_x)
+# print(type(pred_data))
+# print(pred_data)
+# predi_proba = log_reg.predict_proba(test_data_x)
+# print("Predict probability with len: ", len(predi_proba))
+# print(predi_proba)
+# print("ACCURACY = ", accuracy_score(training_data_y.values.ravel(), log_reg.predict(training_data_x)))
+# print("SCORE")
+# print(log_reg.score(test_data_x, pred_data))
+# deci_f = pd.DataFrame(deci_f)
+# print(type(deci_f))
+# print(deci_f.shape)
+# print(deci_f)
+# '''
+# With waves
+# '''
+# print()
+# print(training_data_x.shape)
+# training_data_x_trans = training_data_x
+# print(training_data_x_trans.shape, ' :X')
+# training_Data_x_waves = pd.concat([training_data_x_trans, wavelength_data], axis=1)
+# print(training_Data_x_waves.shape, ' :WAVES')
+# training_Data_x_waves = training_Data_x_waves.transpose()
+# print(training_Data_x_waves.shape, ' :WAVES')
+# #training_Data_x_waves.to_csv('newwaves', sep='\t', encoding='utf-8')
+# training_Data_y_trans = training_data_y.transpose()
+# print(training_Data_y_trans.shape, ' :Y')
+# test_Data_x_trans = test_data_x.transpose()
+# print(training_Data_y_trans.shape, ' :YAFTER')
+#
+# testdatavglist = pd.DataFrame(test_data_x.mean(axis=1))  # 0/1 for rows OR columns
+# print(type(testdatavglist))
+# #testdatavglist = testdatavglist.value[:, 0]
+# print(testdatavglist.shape)
+# #sb.pointplot(testdatavglist, deci_f)
+# plt.scatter(testdatavglist, deci_f, label='hello', color='k', s=50, marker='x')
+# plt.show()
+# Plotting test decision boundary
+# for i in range(len(test_data_x)):
+#     for q in range(len(test_data_x.values[i])):
+#         test_data_x.values[i].
+#         testdatavglist.append()
+
+
+'''
+#wave_test_data = pd.concact([test_Data_x, wavelength_data])
+wave_log_reg = LogisticRegression()
+print("Normal Y data")
+print(wavelength_data.values)
+print(len(wavelength_data))
+print("Ravel Y Data")
+print(wavelength_data.values.ravel())
+wave_log_reg.fit(training_Data_x_waves, training_Data_y.values.ravel())
+
+print("Predicted")
+deci_f = wave_log_reg.decision_function(test_Data_x)
+print("Decision Frunction with len: ", len(deci_f))
+print(deci_f)
+print("Predict Y for Test Data")
+print(wave_log_reg.predict(test_Data_x))
+predi_proba = wave_log_reg.predict_proba(test_Data_x)
+print("Predict probability with len: ", len(predi_proba))
+print(predi_proba)
+print("ACCURACY = ", accuracy_score(wavelength_data.values.ravel(), log_reg.predict(training_Data_x)))
+'''
+

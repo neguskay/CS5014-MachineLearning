@@ -1,0 +1,20 @@
+-Update Report
+-Plan out the logic of the assignment and code
+-Read Feedback
+-Clean the data(probably not - explain why in report)
+-Investigate ways of visualising the data i.e. plot a classification boundary diagram
+-Plot a logistic regression graph
+-Plot a cost function graph
+-Use/plot decision function on training function
+-Create models for at least 3 models i.e. one with all, then with first half, then with second half
+
+///////////////////////////
+Model 1: LogisticReg(xClassified, yClassified), Plot [too many points to plot]
+Model 2: LogisticReg(AVG(xClassified.transposed), yClassified), Plot [AVG, yClassified]
+Model 3: LogisticReg(AVG(xClassified.transposed [+/*] wavelength), yClassified), Plot [AVGExtra, yClassified]
+
+
+
+NOTE:
+- ALWAYS CHECK THE DIMENSIONS OF DATA BEING USED FOR EACH MODEL
+--You might need to transpose a few
